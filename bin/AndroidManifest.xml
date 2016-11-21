@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.github.bysrhq.anycart.android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/applicationName"
+        android:theme="@style/AppTheme" >
+
+        <!-- Login Activity -->
+        <activity
+            android:name="com.github.bysrhq.anycart.android.LoginActivity"
+            android:label="@string/applicationName" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Item List Activity -->
+        <activity
+            android:name="com.github.bysrhq.anycart.android.ItemListActivity"
+            android:label="@string/title_activity_item_list" >
+        </activity>
+        <activity
+            android:name="com.github.bysrhq.anycart.android.CartActivity"
+            android:label="@string/title_activity_cart"
+            android:parentActivityName="com.github.bysrhq.anycart.android.ItemListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.github.bysrhq.anycart.android.ItemListActivity" />
+        </activity>
+        <activity
+            android:name="com.github.bysrhq.anycart.android.ItemDetailActivity"
+            android:label="@string/title_activity_item_detail"
+            android:parentActivityName="com.github.bysrhq.anycart.android.ItemListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.github.bysrhq.anycart.android.ItemListActivity" />
+        </activity>
+        <activity
+            android:name="com.github.bysrhq.anycart.android.CartDetailActivity"
+            android:label="@string/title_activity_cart_detail"
+            android:parentActivityName="com.github.bysrhq.anycart.android.CartActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.github.bysrhq.anycart.android.CartActivity" />
+        </activity>
+        <activity
+            android:name="com.github.bysrhq.anycart.android.SettingActivity"
+            android:label="@string/title_activity_setting"
+            android:parentActivityName="com.github.bysrhq.anycart.android.ItemListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.github.bysrhq.anycart.android.ItemListActivity" />
+        </activity>
+    </application>
+
+</manifest>

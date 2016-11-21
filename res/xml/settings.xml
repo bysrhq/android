@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+	
+    <EditTextPreference
+        android:key="username"
+        title="Username"
+        android:summary="Provide username for authentic user"
+        />
+    <EditTextPreference
+        android:key="passcode"
+        title="Passcode"
+        android:summary="Provide passcode for authentic user"
+        />
+    <EditTextPreference
+        android:key="transaction_id"
+        title="Cart ID/Transaction ID"
+        android:summary="Provide cart Id for managing cart"
+        />
+    
+</PreferenceScreen>

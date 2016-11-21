@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+    <item
+        android:id="@+id/menu_search"
+        android:showAsAction="always"
+        android:title="Search"/>
+    <item
+        android:id="@+id/menu_cart"
+        android:showAsAction="always"
+        android:title="Cart"/>
+    <item
+        android:id="@+id/menu_preference"
+        android:title="Prefs"/>
+
+</menu>

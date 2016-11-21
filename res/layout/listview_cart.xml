@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Barang"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textview_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5000" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textview_transaction_detail_quantity"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/linearLayout1"
+        android:layout_toLeftOf="@+id/textview_transaction_detail_subtotal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="30"/>
+
+    <TextView
+        android:id="@+id/textview_transaction_detail_subtotal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textview_transaction_detail_quantity"
+        android:layout_alignParentRight="true"
+        android:text="5000"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
